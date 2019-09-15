@@ -1,0 +1,717 @@
+EESchema Schematic File Version 4
+LIBS:Extention Boards-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 9
+Title "HELIX Extension Board"
+Date "2019-07-11"
+Rev "A"
+Comp "SDSU Rocket Project"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Extention-Boards-rescue:CONN_01X03 P3
+U 1 1 5D2C095C
+P 650 1550
+F 0 "P3" H 650 1750 50  0000 C CNN
+F 1 "CONN_01X03" V 750 1550 50  0000 C CNN
+F 2 "" H 650 1550 50  0000 C CNN
+F 3 "" H 650 1550 50  0000 C CNN
+	1    650  1550
+	-1   0    0    -1  
+$EndComp
+Text Notes 850  1000 0    60   ~ 0
+RTD0\nExcitation current: 1mA\nLeave lead 3 disconnected if using a 2 wire RTD\nSee ADS124x datasheet section 10.2.1 for reference circuit
+Text HLabel 2800 1150 2    60   Input ~ 0
+RTD0_IDAC1
+Text HLabel 2800 1850 2    60   Input ~ 0
+RTD0_IDAC2
+$Comp
+L Extention-Boards-rescue:R R42
+U 1 1 5D2C0FF6
+P 2950 1300
+F 0 "R42" V 3030 1300 50  0000 C CNN
+F 1 "4.7k" V 2950 1300 50  0000 C CNN
+F 2 "" V 2880 1300 50  0000 C CNN
+F 3 "" H 2950 1300 50  0000 C CNN
+	1    2950 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R43
+U 1 1 5D2C102F
+P 2950 1700
+F 0 "R43" V 3030 1700 50  0000 C CNN
+F 1 "4.7k" V 2950 1700 50  0000 C CNN
+F 2 "" V 2880 1700 50  0000 C CNN
+F 3 "" H 2950 1700 50  0000 C CNN
+	1    2950 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 1450 1250 1450
+Wire Wire Line
+	2650 1150 2650 1300
+Wire Wire Line
+	2650 1300 2800 1300
+Wire Wire Line
+	850  1550 1100 1550
+Wire Wire Line
+	2650 1550 2650 1700
+Wire Wire Line
+	2650 1700 2800 1700
+Wire Wire Line
+	3100 1700 3200 1700
+Wire Wire Line
+	3200 1700 3200 1650
+Wire Wire Line
+	3100 1300 3200 1300
+Wire Wire Line
+	3200 1300 3200 1350
+Wire Wire Line
+	2800 1150 2650 1150
+Connection ~ 2650 1300
+Wire Wire Line
+	2650 1850 2800 1850
+Connection ~ 2650 1700
+$Comp
+L Extention-Boards-rescue:C C45
+U 1 1 5D2C1597
+P 3750 1500
+F 0 "C45" H 3775 1600 50  0000 L CNN
+F 1 "6.8nF" H 3775 1400 50  0000 L CNN
+F 2 "" H 3788 1350 50  0000 C CNN
+F 3 "" H 3750 1500 50  0000 C CNN
+	1    3750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1700 3500 1750
+Connection ~ 3200 1700
+Wire Wire Line
+	3750 1300 3750 1350
+Connection ~ 3200 1300
+Wire Wire Line
+	3500 2050 3500 2100
+Wire Wire Line
+	3500 2100 3750 2100
+Wire Wire Line
+	3750 1650 3750 2100
+Connection ~ 3750 2100
+Connection ~ 3500 1700
+Connection ~ 3750 1300
+$Comp
+L Extention-Boards-rescue:R R39
+U 1 1 5D2C21D6
+P 1450 2200
+F 0 "R39" V 1530 2200 50  0000 C CNN
+F 1 "820" V 1450 2200 50  0000 C CNN
+F 2 "" V 1380 2200 50  0000 C CNN
+F 3 "" H 1450 2200 50  0000 C CNN
+	1    1450 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R40
+U 1 1 5D2C2253
+P 1700 2000
+F 0 "R40" V 1780 2000 50  0000 C CNN
+F 1 "9k" V 1700 2000 50  0000 C CNN
+F 2 "" V 1630 2000 50  0000 C CNN
+F 3 "" H 1700 2000 50  0000 C CNN
+	1    1700 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R41
+U 1 1 5D2C2293
+P 1700 2400
+F 0 "R41" V 1780 2400 50  0000 C CNN
+F 1 "9k" V 1700 2400 50  0000 C CNN
+F 2 "" V 1630 2400 50  0000 C CNN
+F 3 "" H 1700 2400 50  0000 C CNN
+	1    1700 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C42
+U 1 1 5D2C242B
+P 2500 2200
+F 0 "C42" H 2525 2300 50  0000 L CNN
+F 1 "3.3nF" H 2525 2100 50  0000 L CNN
+F 2 "" H 2538 2050 50  0000 C CNN
+F 3 "" H 2500 2200 50  0000 C CNN
+	1    2500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2750 2250 2800
+Wire Wire Line
+	1450 2800 2250 2800
+Wire Wire Line
+	2500 2350 2500 2800
+Wire Wire Line
+	2250 2400 2250 2450
+Connection ~ 2250 2400
+Wire Wire Line
+	1950 2050 1950 2000
+Wire Wire Line
+	1850 2000 1950 2000
+Wire Wire Line
+	2500 2000 2500 2050
+Connection ~ 1950 2000
+Wire Wire Line
+	1950 2350 1950 2400
+Connection ~ 1950 2400
+Wire Wire Line
+	1550 2400 1450 2400
+Wire Wire Line
+	1450 2350 1450 2400
+Wire Wire Line
+	1450 1650 1450 2000
+Wire Wire Line
+	1550 2000 1450 2000
+Connection ~ 1450 2000
+Connection ~ 2250 2800
+Connection ~ 1450 2400
+Connection ~ 2500 2800
+Connection ~ 2500 2000
+Wire Wire Line
+	1850 2400 1950 2400
+Wire Wire Line
+	850  1650 950  1650
+Text HLabel 2650 2000 2    60   Input ~ 0
+RTD0_REFP
+Text HLabel 2650 2400 2    60   Input ~ 0
+RTD0_REFN
+Text HLabel 3900 1700 2    60   Input ~ 0
+RTD0_LEAD2
+Text HLabel 3900 1300 2    60   Input ~ 0
+RTD0_LEAD1
+$Comp
+L Extention-Boards-rescue:C C43
+U 1 1 5D2C608F
+P 3200 1500
+F 0 "C43" H 3225 1600 50  0000 L CNN
+F 1 "68nF" H 3225 1400 50  0000 L CNN
+F 2 "" H 3238 1350 50  0000 C CNN
+F 3 "" H 3200 1500 50  0000 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C44
+U 1 1 5D2C6163
+P 3500 1900
+F 0 "C44" H 3525 2000 50  0000 L CNN
+F 1 "6.8nF" H 3525 1800 50  0000 L CNN
+F 2 "" H 3538 1750 50  0000 C CNN
+F 3 "" H 3500 1900 50  0000 C CNN
+	1    3500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C40
+U 1 1 5D2C63A7
+P 1950 2200
+F 0 "C40" H 1975 2300 50  0000 L CNN
+F 1 "33nF" H 1975 2100 50  0000 L CNN
+F 2 "" H 1988 2050 50  0000 C CNN
+F 3 "" H 1950 2200 50  0000 C CNN
+	1    1950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C41
+U 1 1 5D2C647A
+P 2250 2600
+F 0 "C41" H 2275 2700 50  0000 L CNN
+F 1 "3.3nF" H 2275 2500 50  0000 L CNN
+F 2 "" H 2288 2450 50  0000 C CNN
+F 3 "" H 2250 2600 50  0000 C CNN
+	1    2250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:CONN_01X03 P4
+U 1 1 5D2C744B
+P 5200 1550
+F 0 "P4" H 5200 1750 50  0000 C CNN
+F 1 "CONN_01X03" V 5300 1550 50  0000 C CNN
+F 2 "" H 5200 1550 50  0000 C CNN
+F 3 "" H 5200 1550 50  0000 C CNN
+	1    5200 1550
+	-1   0    0    -1  
+$EndComp
+Text Notes 5400 1000 0    60   ~ 0
+RTD1\nExcitation current: 1mA\nLeave lead 3 disconnected if using a 2 wire RTD\nSee ADS124x datasheet section 10.2.1 for reference circuit
+Text HLabel 7350 1150 2    60   Input ~ 0
+RTD1_IDAC1
+Text HLabel 7350 1850 2    60   Input ~ 0
+RTD1_IDAC2
+$Comp
+L Extention-Boards-rescue:R R47
+U 1 1 5D2C7454
+P 7500 1300
+F 0 "R47" V 7580 1300 50  0000 C CNN
+F 1 "4.7k" V 7500 1300 50  0000 C CNN
+F 2 "" V 7430 1300 50  0000 C CNN
+F 3 "" H 7500 1300 50  0000 C CNN
+	1    7500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R48
+U 1 1 5D2C745A
+P 7500 1700
+F 0 "R48" V 7580 1700 50  0000 C CNN
+F 1 "4.7k" V 7500 1700 50  0000 C CNN
+F 2 "" V 7430 1700 50  0000 C CNN
+F 3 "" H 7500 1700 50  0000 C CNN
+	1    7500 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 1450 5800 1450
+Wire Wire Line
+	7200 1150 7200 1300
+Wire Wire Line
+	7200 1300 7350 1300
+Wire Wire Line
+	5400 1550 5650 1550
+Wire Wire Line
+	7200 1550 7200 1700
+Wire Wire Line
+	7200 1700 7350 1700
+Wire Wire Line
+	7650 1700 7750 1700
+Wire Wire Line
+	7750 1700 7750 1650
+Wire Wire Line
+	7650 1300 7750 1300
+Wire Wire Line
+	7750 1300 7750 1350
+Wire Wire Line
+	7350 1150 7200 1150
+Connection ~ 7200 1300
+Wire Wire Line
+	7200 1850 7350 1850
+Connection ~ 7200 1700
+$Comp
+L Extention-Boards-rescue:C C51
+U 1 1 5D2C7474
+P 8300 1500
+F 0 "C51" H 8325 1600 50  0000 L CNN
+F 1 "6.8nF" H 8325 1400 50  0000 L CNN
+F 2 "" H 8338 1350 50  0000 C CNN
+F 3 "" H 8300 1500 50  0000 C CNN
+	1    8300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1700 8050 1750
+Connection ~ 7750 1700
+Wire Wire Line
+	8300 1300 8300 1350
+Connection ~ 7750 1300
+Wire Wire Line
+	8050 2050 8050 2100
+Wire Wire Line
+	8050 2100 8300 2100
+Wire Wire Line
+	8300 1650 8300 2100
+Connection ~ 8300 2100
+Connection ~ 8050 1700
+Connection ~ 8300 1300
+$Comp
+L Extention-Boards-rescue:R R44
+U 1 1 5D2C748B
+P 6000 2200
+F 0 "R44" V 6080 2200 50  0000 C CNN
+F 1 "820" V 6000 2200 50  0000 C CNN
+F 2 "" V 5930 2200 50  0000 C CNN
+F 3 "" H 6000 2200 50  0000 C CNN
+	1    6000 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R45
+U 1 1 5D2C7491
+P 6250 2000
+F 0 "R45" V 6330 2000 50  0000 C CNN
+F 1 "9k" V 6250 2000 50  0000 C CNN
+F 2 "" V 6180 2000 50  0000 C CNN
+F 3 "" H 6250 2000 50  0000 C CNN
+	1    6250 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:R R46
+U 1 1 5D2C7497
+P 6250 2400
+F 0 "R46" V 6330 2400 50  0000 C CNN
+F 1 "9k" V 6250 2400 50  0000 C CNN
+F 2 "" V 6180 2400 50  0000 C CNN
+F 3 "" H 6250 2400 50  0000 C CNN
+	1    6250 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C48
+U 1 1 5D2C749D
+P 7050 2200
+F 0 "C48" H 7075 2300 50  0000 L CNN
+F 1 "3.3nF" H 7075 2100 50  0000 L CNN
+F 2 "" H 7088 2050 50  0000 C CNN
+F 3 "" H 7050 2200 50  0000 C CNN
+	1    7050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2750 6800 2800
+Wire Wire Line
+	6000 2800 6800 2800
+Wire Wire Line
+	7050 2350 7050 2800
+Wire Wire Line
+	6800 2400 6800 2450
+Connection ~ 6800 2400
+Wire Wire Line
+	6500 2050 6500 2000
+Wire Wire Line
+	6400 2000 6500 2000
+Wire Wire Line
+	7050 2000 7050 2050
+Connection ~ 6500 2000
+Wire Wire Line
+	6500 2350 6500 2400
+Connection ~ 6500 2400
+Wire Wire Line
+	6100 2400 6000 2400
+Wire Wire Line
+	6000 2350 6000 2400
+Wire Wire Line
+	6000 1650 6000 2000
+Wire Wire Line
+	6100 2000 6000 2000
+Connection ~ 6000 2000
+Connection ~ 6800 2800
+Connection ~ 6000 2400
+Connection ~ 7050 2800
+Connection ~ 7050 2000
+Wire Wire Line
+	6400 2400 6500 2400
+Wire Wire Line
+	5400 1650 5500 1650
+Text HLabel 7200 2000 2    60   Input ~ 0
+RTD1_REFP
+Text HLabel 7200 2400 2    60   Input ~ 0
+RTD1_REFN
+Text HLabel 8450 1700 2    60   Input ~ 0
+RTD1_LEAD2
+Text HLabel 8450 1300 2    60   Input ~ 0
+RTD1_LEAD1
+$Comp
+L Extention-Boards-rescue:C C49
+U 1 1 5D2C74CB
+P 7750 1500
+F 0 "C49" H 7775 1600 50  0000 L CNN
+F 1 "68nF" H 7775 1400 50  0000 L CNN
+F 2 "" H 7788 1350 50  0000 C CNN
+F 3 "" H 7750 1500 50  0000 C CNN
+	1    7750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C50
+U 1 1 5D2C74D1
+P 8050 1900
+F 0 "C50" H 8075 2000 50  0000 L CNN
+F 1 "6.8nF" H 8075 1800 50  0000 L CNN
+F 2 "" H 8088 1750 50  0000 C CNN
+F 3 "" H 8050 1900 50  0000 C CNN
+	1    8050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C46
+U 1 1 5D2C74D7
+P 6500 2200
+F 0 "C46" H 6525 2300 50  0000 L CNN
+F 1 "33nF" H 6525 2100 50  0000 L CNN
+F 2 "" H 6538 2050 50  0000 C CNN
+F 3 "" H 6500 2200 50  0000 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:C C47
+U 1 1 5D2C74DD
+P 6800 2600
+F 0 "C47" H 6825 2700 50  0000 L CNN
+F 1 "3.3nF" H 6825 2500 50  0000 L CNN
+F 2 "" H 6838 2450 50  0000 C CNN
+F 3 "" H 6800 2600 50  0000 C CNN
+	1    6800 2600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	450  3100 11250 3100
+Wire Notes Line
+	4900 450  4900 3100
+Wire Wire Line
+	950  2250 950  2700
+Wire Wire Line
+	950  2700 1100 2700
+Wire Wire Line
+	1250 2700 1250 2550
+Connection ~ 950  2700
+Wire Wire Line
+	1100 2400 1100 2700
+Connection ~ 1100 2700
+Wire Wire Line
+	1250 1450 1250 2350
+Wire Wire Line
+	950  1650 950  2050
+Wire Wire Line
+	1100 1550 1100 2200
+Connection ~ 950  1650
+Connection ~ 1100 1550
+Connection ~ 1250 1450
+Wire Wire Line
+	5500 2250 5500 2700
+Wire Wire Line
+	5500 2700 5650 2700
+Wire Wire Line
+	5800 2700 5800 2550
+Connection ~ 5500 2700
+Wire Wire Line
+	5650 2400 5650 2700
+Connection ~ 5650 2700
+Wire Wire Line
+	5800 1450 5800 2350
+Wire Wire Line
+	5500 1650 5500 2050
+Wire Wire Line
+	5650 1550 5650 2200
+Connection ~ 5800 1450
+Connection ~ 5650 1550
+Connection ~ 5500 1650
+$Comp
+L power:GNDA #PWR91
+U 1 1 5D6C511B
+P 950 2750
+F 0 "#PWR91" H 950 2500 50  0001 C CNN
+F 1 "GNDA" H 950 2600 50  0000 C CNN
+F 2 "" H 950 2750 50  0000 C CNN
+F 3 "" H 950 2750 50  0000 C CNN
+	1    950  2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR92
+U 1 1 5D6C52A2
+P 2500 2850
+F 0 "#PWR92" H 2500 2600 50  0001 C CNN
+F 1 "GNDA" H 2500 2700 50  0000 C CNN
+F 2 "" H 2500 2850 50  0000 C CNN
+F 3 "" H 2500 2850 50  0000 C CNN
+	1    2500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR93
+U 1 1 5D6C5307
+P 3750 2150
+F 0 "#PWR93" H 3750 1900 50  0001 C CNN
+F 1 "GNDA" H 3750 2000 50  0000 C CNN
+F 2 "" H 3750 2150 50  0000 C CNN
+F 3 "" H 3750 2150 50  0000 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR94
+U 1 1 5D6C560F
+P 5500 2750
+F 0 "#PWR94" H 5500 2500 50  0001 C CNN
+F 1 "GNDA" H 5500 2600 50  0000 C CNN
+F 2 "" H 5500 2750 50  0000 C CNN
+F 3 "" H 5500 2750 50  0000 C CNN
+	1    5500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR95
+U 1 1 5D6C5860
+P 7050 2850
+F 0 "#PWR95" H 7050 2600 50  0001 C CNN
+F 1 "GNDA" H 7050 2700 50  0000 C CNN
+F 2 "" H 7050 2850 50  0000 C CNN
+F 3 "" H 7050 2850 50  0000 C CNN
+	1    7050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR96
+U 1 1 5D6C58C5
+P 8300 2150
+F 0 "#PWR96" H 8300 1900 50  0001 C CNN
+F 1 "GNDA" H 8300 2000 50  0000 C CNN
+F 2 "" H 8300 2150 50  0000 C CNN
+F 3 "" H 8300 2150 50  0000 C CNN
+	1    8300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D13
+U 1 1 5D688884
+P 950 2150
+F 0 "D13" H 850 2200 50  0000 C CNN
+F 1 "TVSsmall" H 1000 2050 50  0000 C CNN
+F 2 "" H 950 2150 50  0000 C CNN
+F 3 "" H 950 2150 50  0000 C CNN
+	1    950  2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D14
+U 1 1 5D68891D
+P 1100 2300
+F 0 "D14" H 1000 2350 50  0000 C CNN
+F 1 "TVSsmall" H 1150 2200 50  0000 C CNN
+F 2 "" H 1100 2300 50  0000 C CNN
+F 3 "" H 1100 2300 50  0000 C CNN
+	1    1100 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D15
+U 1 1 5D688990
+P 1250 2450
+F 0 "D15" H 1150 2500 50  0000 C CNN
+F 1 "TVSsmall" H 1300 2350 50  0000 C CNN
+F 2 "" H 1250 2450 50  0000 C CNN
+F 3 "" H 1250 2450 50  0000 C CNN
+	1    1250 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D18
+U 1 1 5D688FF4
+P 5800 2450
+F 0 "D18" H 5700 2500 50  0000 C CNN
+F 1 "TVSsmall" H 5850 2350 50  0000 C CNN
+F 2 "" H 5800 2450 50  0000 C CNN
+F 3 "" H 5800 2450 50  0000 C CNN
+	1    5800 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D17
+U 1 1 5D68907D
+P 5650 2300
+F 0 "D17" H 5550 2350 50  0000 C CNN
+F 1 "TVSsmall" H 5700 2200 50  0000 C CNN
+F 2 "" H 5650 2300 50  0000 C CNN
+F 3 "" H 5650 2300 50  0000 C CNN
+	1    5650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Extention-Boards-rescue:TVSsmall D16
+U 1 1 5D6890EE
+P 5500 2150
+F 0 "D16" H 5400 2200 50  0000 C CNN
+F 1 "TVSsmall" H 5550 2050 50  0000 C CNN
+F 2 "" H 5500 2150 50  0000 C CNN
+F 3 "" H 5500 2150 50  0000 C CNN
+	1    5500 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 1300 2650 1450
+Wire Wire Line
+	2650 1700 2650 1850
+Wire Wire Line
+	3200 1700 3500 1700
+Wire Wire Line
+	3200 1300 3750 1300
+Wire Wire Line
+	3750 2100 3750 2150
+Wire Wire Line
+	3500 1700 3900 1700
+Wire Wire Line
+	3750 1300 3900 1300
+Wire Wire Line
+	2250 2400 2650 2400
+Wire Wire Line
+	1950 2000 2500 2000
+Wire Wire Line
+	1950 2400 2250 2400
+Wire Wire Line
+	1450 2000 1450 2050
+Wire Wire Line
+	2250 2800 2500 2800
+Wire Wire Line
+	1450 2400 1450 2800
+Wire Wire Line
+	2500 2800 2500 2850
+Wire Wire Line
+	2500 2000 2650 2000
+Wire Wire Line
+	7200 1300 7200 1450
+Wire Wire Line
+	7200 1700 7200 1850
+Wire Wire Line
+	7750 1700 8050 1700
+Wire Wire Line
+	7750 1300 8300 1300
+Wire Wire Line
+	8300 2100 8300 2150
+Wire Wire Line
+	8050 1700 8450 1700
+Wire Wire Line
+	8300 1300 8450 1300
+Wire Wire Line
+	6800 2400 7200 2400
+Wire Wire Line
+	6500 2000 7050 2000
+Wire Wire Line
+	6500 2400 6800 2400
+Wire Wire Line
+	6000 2000 6000 2050
+Wire Wire Line
+	6800 2800 7050 2800
+Wire Wire Line
+	6000 2400 6000 2800
+Wire Wire Line
+	7050 2800 7050 2850
+Wire Wire Line
+	7050 2000 7200 2000
+Wire Wire Line
+	950  2700 950  2750
+Wire Wire Line
+	1100 2700 1250 2700
+Wire Wire Line
+	950  1650 1450 1650
+Wire Wire Line
+	1100 1550 2650 1550
+Wire Wire Line
+	1250 1450 850  1450
+Wire Wire Line
+	5500 2700 5500 2750
+Wire Wire Line
+	5650 2700 5800 2700
+Wire Wire Line
+	5800 1450 5400 1450
+Wire Wire Line
+	5650 1550 7200 1550
+Wire Wire Line
+	5500 1650 6000 1650
+$EndSCHEMATC
